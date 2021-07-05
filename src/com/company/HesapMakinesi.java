@@ -26,8 +26,13 @@ public class HesapMakinesi {
                 System.out.println(result);
                 break;
             case 4:
-                result = first / second;
-                System.out.println(result);
+                if (second != 0) {
+                    result = first / second;
+                    System.out.println(result);
+                }
+                else {
+                    System.out.println("Sifira Bolenemz");
+                }
                 break;
             default:
                 System.out.println("Hatali Secim veya Giris");
