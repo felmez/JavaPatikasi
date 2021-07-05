@@ -31,7 +31,7 @@ public class HesapMakinesi {
                     System.out.println(result);
                 }
                 else {
-                    System.out.println("Sifira Bolenemz");
+                    System.out.println("Sifira Bolunemez");
                 }
                 break;
             default:
