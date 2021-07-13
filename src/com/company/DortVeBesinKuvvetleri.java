@@ -10,8 +10,8 @@ public class DortVeBesinKuvvetleri {
 
         System.out.print("Bir Sayi Giriniz: ");
         number = input.nextInt();
-        System.out.println("Ucun Kuvveti -----");
-        for (int i = 1; i <= number; i *= 3) {
+        System.out.println("Dordun Kuvveti -----");
+        for (int i = 1; i <= number; i *= 4) {
             System.out.println(i);
         }
         System.out.println("Besin Kuvveti -----");
