@@ -15,7 +15,7 @@ public class DortKatiSayilarinToplami {
                 total += number;
             }
         } while (number % 2 == 0);
-        
+
         System.out.println("Girilen Cift Sayilarin Toplami: " + total);
     }
 }
