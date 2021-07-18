@@ -1,17 +1,22 @@
 package com.company;
 import java.util.*;
 
-public class HesapMakinesi {
+public class SimpleCalculator {
     public static void main(String[] args) {
         double first, second, result = 0;
         int selection;
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Ilk Sayiyi Giriniz: ");
+
+        System.out.print("Enter the first number: ");
         first = input.nextDouble();
-        System.out.print("Ikinci Sayiyi Giriniz: ");
+
+        System.out.print("Enter the second number: ");
         second = input.nextDouble();
-        System.out.println("Lutfen Islemi Seciniz: \n1-+\n2--\n3-*\n4-/");
+
+        System.out.println("Please select an operation: \n1-+\n2--\n3-*\n4-/");
         selection = input.nextInt();
+
         switch (selection) {
             case 1:
                 result = first + second;
@@ -31,11 +36,11 @@ public class HesapMakinesi {
                     System.out.println(result);
                 }
                 else {
-                    System.out.println("Sifira Bolunemez");
+                    System.out.println("Zero Division Error");
                 }
                 break;
             default:
-                System.out.println("Hatali Secim veya Giris");
+                System.out.println("Wrong Selection or Input.");
                 break;
         }
     }
