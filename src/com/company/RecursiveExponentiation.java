@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class RecursiveExponential {
+public class RecursiveExponentiation {
     static int power(int base, int exponent) {
         if (exponent != 0) {
             return (base * power(base, exponent - 1));
