@@ -2,15 +2,18 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Kombinasyon {
+public class CombinationCalculator {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        System.out.print("N Sayisi Giriniz: ");
+
+        System.out.print("Enter N: ");
         int n = input.nextInt();
-        System.out.print("R Sayisi Giriniz: ");
+
+        System.out.print("Enter R: ");
         int r = input.nextInt();
+
         int result = factorial(n) / (factorial(r) * factorial(n - r));
-        System.out.println("Sonuc: " + result);
+        System.out.println("Combination Result is " + result);
 
     }
 
