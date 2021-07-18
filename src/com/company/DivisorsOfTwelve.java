@@ -2,13 +2,13 @@ package com.company;
 
 import java.util.Scanner;
 
-public class CiftSayilar {
+public class DivisorsOfTwelve {
     public static void main(String[] args) {
         int number;
 
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Lutfen Bir Sayi Giriniz: ");
+        System.out.print("Enter a number: ");
         number = input.nextInt();
 
         for (int i = 0; i <= number; i++) {
