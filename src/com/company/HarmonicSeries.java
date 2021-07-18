@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.Scanner;
 
 public class HarmonicSeries {
@@ -12,7 +13,7 @@ public class HarmonicSeries {
         number = input.nextInt();
 
         for (double i = 1.0; i <= number; i++) {
-            result += 1/i;
+            result += 1 / i;
         }
 
         System.out.println("Result: " + String.format("%.2f", result));
