@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.*;
 
 public class SuggestActivityByWeatherTemperature {
@@ -21,6 +22,7 @@ public class SuggestActivityByWeatherTemperature {
         }
 
     }
+
     public static boolean isBetween(int degree, int lower, int upper) {
         return lower <= degree && degree <= upper;
     }
