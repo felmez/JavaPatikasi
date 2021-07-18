@@ -1,4 +1,5 @@
 package com.company;
+
 import java.util.*;
 
 public class SimpleCalculator {
@@ -34,8 +35,7 @@ public class SimpleCalculator {
                 if (second != 0) {
                     result = first / second;
                     System.out.println(result);
-                }
-                else {
+                } else {
                     System.out.println("Zero Division Error");
                 }
                 break;
