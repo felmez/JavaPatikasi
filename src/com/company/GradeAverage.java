@@ -2,35 +2,35 @@ package com.company;
 
 import java.util.*;
 
-public class NotOrtalamasi {
+public class GradeAverage {
 
     public static void main(String[] args) {
         // write your code here
         Scanner input = new Scanner(System.in);
         int math, physics, chemistry, geometry, music, history;
 
-        System.out.print("Mat Notu : ");
+        System.out.print("Mathematics Note: ");
         math = input.nextInt();
 
-        System.out.print("Fizik Notu : ");
+        System.out.print("Physics Note: ");
         physics = input.nextInt();
 
-        System.out.print("Kimya Notu : ");
+        System.out.print("Chemistry Note: ");
         chemistry = input.nextInt();
 
-        System.out.print("Geo Notu : ");
+        System.out.print("Geometry Note: ");
         geometry = input.nextInt();
 
-        System.out.print("Müzik Notu : ");
+        System.out.print("Music Note: ");
         music = input.nextInt();
 
-        System.out.print("Tarih Notu : ");
+        System.out.print("History Note: ");
         history = input.nextInt();
 
         int total = math + physics + geometry + chemistry + music + history;
         double gpa = total / 6.0;
-        String result = gpa > 60 ? "Sınıfı Geçti" : "Sınıfta Kaldı";
-        System.out.println("Ortalama = " + String.format("%.2f", gpa));
+        String result = gpa > 60 ? "Grade Pass" : "Grade Failed";
+        System.out.println("Grade Average: " + String.format("%.2f", gpa));
         System.out.println(result);
     }
 }
