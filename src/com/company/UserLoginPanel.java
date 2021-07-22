@@ -2,32 +2,37 @@ package com.company;
 
 import java.util.*;
 
-public class KuallniciGirisi {
+public class UserLoginPanel {
     public static void main(String[] args) {
         String userName = "patika", password = "lorem";
         int reset = 0;
+
         Scanner input = new Scanner(System.in);
-        System.out.print("Kullanici Adinizi Giriniz: ");
+
+        System.out.print("Enter username: ");
         String iUserName = input.nextLine();
-        System.out.print("Sifrenizi Giriniz: ");
+
+        System.out.print("Enter password: ");
         String iPassword = input.nextLine();
+
         if (iUserName.equals(userName) && iPassword.equals(password)) {
-            System.out.println("Hos Geldin " + userName);
+            System.out.println("Welcome " + userName);
         }
         if (!iUserName.equals(userName) || !iPassword.equals(password)) {
-            System.out.println("Kullanici Adi veya Sifre Hatali!");
-            System.out.print("Sifrenizi mi Unuttunuz? \n1- Evet Sifirlamak Istiyorum \n2- Hayir Tekrar Denemek Istiyorum \n");
+            System.out.println("Wrong username or password!");
+            System.out.print("Forgot password? \n1- Yes, Reset Password \n2- No, Try Again \n");
             reset = input.nextInt();
+
             if (reset != 1) {
-                System.out.println("Peki...");
-            }
-            else {
-                System.out.print("Yeni Sifrenizi Giriniz: ");
+                System.out.println("Okay...");
+            } else {
+                System.out.print("Enter new password: ");
                 String newPassword = input.next();
+
                 if (newPassword.equals(iPassword) || newPassword.equals(password)) {
-                    System.out.println("Sifre Olusturulamadi, Lutfen Baska Sifre Giriniz.");
+                    System.out.println("Can't use this password, please try another password.");
                 } else {
-                    System.out.println("Sifre Olusturuldu.");
+                    System.out.println("Password reset successfully.");
                 }
             }
         }
