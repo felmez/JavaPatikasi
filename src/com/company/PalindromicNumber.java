@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Scanner;
 
-public class Palindrome {
+public class PalindromicNumber {
     static boolean isPalindrome(int i) {
         int tempNumber = i, reversedNumber = 0, lastDigit;
 
